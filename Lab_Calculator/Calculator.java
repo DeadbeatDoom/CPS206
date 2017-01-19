@@ -12,25 +12,14 @@ public class Calculator {
 
      public static void main(String[] args) throws IOException {
 
-      double num1 = Double.valueOf(args[1]);
-      double num2 = Double.valueOf(args[2]);
-      char operator;
-      double answer = 0.0;
+      char input,
+           operator;
+      double num1 = Double.valueOf(args[1]),
+             num2 = Double.valueOf(args[2]),
+             answer = 0.0;
 
-        if (scanObject.hasNextDouble()) {
-          num1 = scanObject.nextDouble();
-          operator = scanObject.next().charAt(0);
-          num2 = scanObject.nextDouble();
-        }
-        else {
-          System.out.println("Invalid Input");
-          scanObject.next();
-          continue;
-        }
-        if (operator !='+' && operator != '-' && operator !='*'&& operator !='/') {
+        if (operator !='A' && operator != 'S' && operator !='M'&& operator !='D') {
         System.out.println("Invalid Input");
-        scanObject.next();
-        continue;
         }
         else{
           switch (operator) {
