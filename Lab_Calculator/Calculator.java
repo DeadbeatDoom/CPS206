@@ -12,34 +12,34 @@ public class Calculator {
 
      public static void main(String[] args) throws IOException {
 
-      char input,
-           operator;
+      String operator;
       double num1 = Double.valueOf(args[1]),
              num2 = Double.valueOf(args[2]),
              answer = 0.0;
-
-        if (operator !='A' && operator != 'S' && operator !='M'&& operator !='D') {
-        System.out.println("Invalid Input");
-        }
-        else{
+      if (args.length != 3){
+        System.out.println("Invalid number of Arguements");
+        System.exit(0);
+      }
+      operator = args[0].toUpperCase();
           switch (operator) {
-            case '+': answer = num1 + num2;
+            case "ADD": answer = num1 + num2;
                break;
-            case '-': answer = num1 - num2;
+            case "SUBTRACT": answer = num1 - num2;
                break;
-            case '*': answer = num1 * num2;
+            case "MULTIPLY": answer = num1 * num2;
                break;
-            case '/':
+            case "DIVIDE":
                if (num2 != 0) {
                       answer = num1 / num2;
                }
                else {
                  System.out.println("Invalid Operation: Divide by Zero");
-                 answer = 0;
+                 System.exit(0);
                }
                break;
+            default: System.out.println("Invalid Operator");
+               break;
           }
-        }
-          System.out.println(num1+" "+operator+" "+num2+" = "+answer);
+          System.out.println(answer);
      }
 }
