@@ -10,7 +10,7 @@ import java.util.*;
 
 public class Calculator {
 
-     public static void main(String[] args) throws IOException {
+   public static void main(String[] args) throws NumberFormatException{
 
       String operator;
       double num1 = Double.valueOf(args[1]),
@@ -20,7 +20,11 @@ public class Calculator {
         System.out.println("Invalid number of Arguements");
         System.exit(0);
       }
-      operator = args[0].toUpperCase();
+      try {
+        num1 = Double.valueOf(args[1]);
+        num2 = Double.valueOf(args[2]);
+        operator = args[0].toUpperCase();
+
           switch (operator) {
             case "ADD": answer = num1 + num2;
                break;
@@ -37,9 +41,16 @@ public class Calculator {
                  System.exit(0);
                }
                break;
-            default: System.out.println("Invalid Operator");
+            default: System.out.println("Invalid Operation");
                break;
           }
           System.out.println(answer);
-     }
+      }
+      catch (NumberFormatException e) {
+        e.printStackTrace();
+      }
+      finally {
+        System.exit(1);
+      }
+    }
 }
