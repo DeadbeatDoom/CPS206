@@ -12,17 +12,11 @@ public class Calculator {
 
      public static void main(String[] args) throws IOException {
 
-      double num1 = 0.0;
-      double num2 = 0.0;
+      double num1 = Double.valueOf(args[1]);
+      double num2 = Double.valueOf(args[2]);
       char operator;
       double answer = 0.0;
-      String repeat = "Y";
-      char again = 'Y';
 
-      Scanner scanObject = new Scanner(System.in);
-      Scanner keyboard = new Scanner(System.in);
-
-      while (again == 'Y'){
         if (scanObject.hasNextDouble()) {
           num1 = scanObject.nextDouble();
           operator = scanObject.next().charAt(0);
@@ -58,11 +52,5 @@ public class Calculator {
           }
         }
           System.out.println(num1+" "+operator+" "+num2+" = "+answer);
-          System.out.println("\n");
-          System.out.println("Would you like to perform another operation?(Y/N)");
-          repeat = keyboard.nextLine();
-          repeat = repeat.toUpperCase();
-          again = repeat.charAt(0);
-      }
      }
 }
