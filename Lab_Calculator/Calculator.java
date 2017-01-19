@@ -23,17 +23,9 @@ public class Calculator {
       Scanner keyboard = new Scanner(System.in);
 
       while (again == 'Y'){
-        System.out.println("Enter first number: ");
         if (scanObject.hasNextDouble()) {
           num1 = scanObject.nextDouble();
-        }
-        else {
-          System.out.println("Invalid Input");
-          scanObject.next();
-          continue;
-        }
-        System.out.println("Enter second number: ");
-        if (scanObject.hasNextDouble()) {
+          operator = scanObject.next().charAt(0);
           num2 = scanObject.nextDouble();
         }
         else {
@@ -41,9 +33,12 @@ public class Calculator {
           scanObject.next();
           continue;
         }
-        System.out.println("What operation? ");
-        if (scanObject.hasNext()) {
-          operator = scanObject.next().charAt(0);
+        if (operator !='+' && operator != '-' && operator !='*'&& operator !='/') {
+        System.out.println("Invalid Input");
+        scanObject.next();
+        continue;
+        }
+        else{
           switch (operator) {
             case '+': answer = num1 + num2;
                break;
@@ -61,18 +56,13 @@ public class Calculator {
                }
                break;
           }
+        }
           System.out.println(num1+" "+operator+" "+num2+" = "+answer);
           System.out.println("\n");
           System.out.println("Would you like to perform another operation?(Y/N)");
           repeat = keyboard.nextLine();
           repeat = repeat.toUpperCase();
           again = repeat.charAt(0);
-        }
-        else {
-          System.out.println("Invalid Input");
-          scanObject.next();
-          continue;
-        }
       }
      }
 }
