@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class List{
+public class Example {
   public static void main (string[] args){
     ArrayList <string> list = new ArrayList();
     System.out.println(list.size());
@@ -11,6 +11,7 @@ public class List{
     System.out.println(list.contains("Kulis"));//F
     System.out.println(list.contains("Marchal"));//T?F
     String firstName = list.get(1);
+    System.out.println(firstName);
   }
 }
 
