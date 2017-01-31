@@ -10,7 +10,7 @@ public class List{
     System.out.println(list);
     System.out.println(list.contains("Kulis"));//F
     System.out.println(list.contains("Marchal"));//T?F
-
+    String firstName = list.get(1);
   }
 }
 
@@ -19,5 +19,5 @@ public class List{
 // findAverage A rec()
 // (?superInteger) Sets lower bound
 // (E extends Comparable(?super E)) Sets upper and lower bounds
-
+//
 //
