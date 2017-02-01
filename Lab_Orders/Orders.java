@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-/public class Item{
+/*public class Item{
 
   private String name;
   private Double price;
@@ -18,7 +18,7 @@ import java.io.*;
   }
 }*/
 
-public class Order{
+/*public class Order{
 
   public static void main(String args[]){
 
@@ -30,3 +30,4 @@ public class Order{
 
 
 }
+*/
