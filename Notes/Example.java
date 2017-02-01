@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
 public class Example {
-  public static void main (string[] args){
-    ArrayList <string> list = new ArrayList();
+  public static void main(String[] args){
+    ArrayList <String> list = new ArrayList <String> ();
     System.out.println(list.size());
     list.add("Bryan Marchal");
     System.out.println(list.size());
