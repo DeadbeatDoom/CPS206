@@ -6,7 +6,7 @@ public class RecursionExample{
 
     System.out.println(recursion.doFactorial(5));
     System.out.println(recursion.doSums(10));
-    System.out.println(sumRange(1,10));
+  //  System.out.println(sumRange(1,10));
   }
 
   public int doFactorial(int n) {
