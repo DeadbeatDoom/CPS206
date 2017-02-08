@@ -1,14 +1,18 @@
 package edu.jalc.inclass.bottle;
 
-  public class SodaBottle{
+class SodaBottle{
 
-    private final double capacity = 20.0;
-    //private final double height;
-    //private final double circumference;
-    //private boolean isEmpty;
-
-
-      double getCapacity(){
-        return capacity;
-      }
-  }
+  private double capacity;
+    private SodaBottle(){
+      setCapacity(0);
+    }
+    SodaBottle(double capacity){
+      setCapacity(capacity);
+    }
+    void setCapacity(double capacity){
+      this.capacity = capacity;
+    }
+  //private final double height;
+  //private final double circumference;
+  //private boolean isEmpty;
+}
