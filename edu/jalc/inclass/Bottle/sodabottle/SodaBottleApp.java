@@ -1,5 +1,7 @@
 package edu.jalc.inclass.bottle;
 
+import edu.jalc.inclass.bottle.sodabottlelid;
+
 public class SodaBottleApp{
 
   public static void main(String...args){

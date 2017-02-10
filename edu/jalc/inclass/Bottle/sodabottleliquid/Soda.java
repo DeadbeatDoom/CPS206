@@ -12,7 +12,9 @@ public class Soda {
 		this.setVolume(volume);
 	}
 
-	public double getVolume(){ return this.volume; }
+	public double getVolume(){
+		return this.volume;
+	}
 
 	public Soda setVolume(double volume){
 		this.volume = volume;
