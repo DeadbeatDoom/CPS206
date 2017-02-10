@@ -1,4 +1,4 @@
-package edu.jalc.inclass.liquid;
+package edu.jalc.inclass.sodabottleliquid;
 
 public class SodaTest {
 

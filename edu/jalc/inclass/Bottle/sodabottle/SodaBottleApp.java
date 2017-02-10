@@ -1,4 +1,4 @@
-package edu.jalc.inclass.bottle;
+package edu.jalc.inclass.bottle.sodabottle;
 
 import edu.jalc.inclass.bottle.sodabottlelid;
 

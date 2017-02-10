@@ -1,7 +1,8 @@
-package edu.jalc.inclass.bottle;
+package edu.jalc.inclass.bottle.sodabottle;
 
-import edu.jalc.inclass.lid.SodaBottleLid;
-import edu.jalc.inclass.liquid.Soda;
+import edu.jalc.inclass.bottle.sodabottlelabel;
+import edu.jalc.inclass.bottle.sodabottlelid;
+import edu.jalc.inclass.bottle.sodabottleliquid;
 
 public class SodaBottle {
 
@@ -21,9 +22,15 @@ public class SodaBottle {
 		this.setSoda(soda);
 	}
 
-	double getCapacity(){ return capacity; }
-	SodaBottleLid getLid(){	return this.lid; }
-	Soda getSoda(){ return this.soda; }
+	double getCapacity(){
+		return capacity;
+	}
+	SodaBottleLid getLid(){
+		return this.lid;
+	}
+	Soda getSoda(){
+		return this.soda;
+	}
 
 	SodaBottle setLid(SodaBottleLid lid) throws Exception {
 		if(lid == null) throw new Exception("SodaBottleLid cannot be null");

@@ -1,4 +1,4 @@
-package edu.jalc.inclass.liquid;
+package edu.jalc.inclass.bottle.sodabottleliquid;
 
 public class Soda {
 
