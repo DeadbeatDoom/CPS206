@@ -76,3 +76,56 @@ HashMap<Integer,String> numbers = new HashMap<>();
 1- "one"
 2- "two"
 3- "three"
+
+## Testable
+
+public final static - creates a constant
+Static - only creates a single reference
+Singletons
+SUP - Single Use Purpose
+DRY - Don't Repeat Yourself
+closed/open principle
+Builder Pattern
+
+if(maze.spot open(up)){move(up)} YES
+if(maze[+1][.]).... NO
+
+setAttached (boolean attach) NO
+attach()
+detach()YES
+
+# SUP
+Bottle{
+  String typeOfLiquid; NO
+  Content[] contents YES
+}
+
+Book{
+  String title;
+  Preface preface;
+  Chapter[] chapters;
+}
+
+## Private Classes
+
+public class Dog {
+  private Dogcollar dogCollar = new DogCollar();
+# Private Inner Class
+  private class DogCollar {    
+  }
+}
+
+public class Dog {
+  private String name;
+  public Dog(String name){
+    this.name = name
+  }
+}
+Dog fido = new Dog("Fido");
+Dog spot = new Dog("Spot");
+Dog maxwell = new Dog("Maxwell");
+
+public static void main(...) NO
+Dog.main
+
+public final static String NAME;
